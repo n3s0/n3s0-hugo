@@ -4,19 +4,54 @@ title = 'My New Hugo Site'
 
 [menus]
   [[menus.main]]
-    name = 'Home'
-    pageRef = '/'
-    weight = 10
-
+    name = 'Journal'
+    title = 'Journal'
+    url = '/journal'
+    weight = 1
   [[menus.main]]
-    name = 'Posts'
-    pageRef = '/posts'
-    weight = 20
-
+    name = 'Entries'
+    title = 'Entries'
+    url = '/entries'
+    weight = 2
   [[menus.main]]
-    name = 'Tags'
-    pageRef = '/tags'
-    weight = 30
+    name = 'Notes'
+    title = 'Notes'
+    url = '/notes'
+    weight = 3
+  [[menus.main]]
+    name = 'Projects'
+    title = 'Projects'
+    url = '/projects'
+    weight = 4
+  [[menus.main]]
+    name = 'Bookmarks'
+    title = 'Bookmarks'
+    url = '/bookmarks'
+    weight = 14
+  [[menus.main]]
+    name = 'Contact'
+    title = 'Contact'
+    url = '/contact'
+    weight = 15
+  [[menus.main]]
+    name = 'Github'
+    url = 'https://github.com/n3s0/'
+    weight = 15
+  [[menus.main]]
+    name = 'GitLab'
+    url = 'https://gitlab.com/n3s0/'
+    weight = 15
+  [[menus.main]]
+    name = 'RSS'
+    title = 'RSS'
+    url = '/index.xml'
+    weight = 17
+
+copyright = "Timothy Loftus (n3s0)"
+
+enableSearch = true
+
+pageQrCode = false
 
 [module]
   [module.hugoVersion]
