@@ -1,22 +1,92 @@
+.site-wrapper {
+  min-height: 100vh;
+  padding: 3vw;
+}
+
+.site-head {
+  font-size: 1.65rem;
+  max-width: 720px;
+}
+
+.site-head-container {
+  align-items: center;
+  border-botom: 2px solid var(--color-border);
+  display: black;
+}
+
+.site-main {
+  max-width: 720px;
+}
+
+.post-content-title {
+  color: var(--color-base);
+  font-family: var(--font-mono);
+  font-weight: var(--font-normal);
+  margin: 0 0 4vw;
+  text-align: left;
+}
+
 body {
-  color: #222;
-  font-family: sans-serif;
-  line-height: 1.5;
-  margin: 1rem;
-  max-width: 768px;
+  background: var(--color-bg);
+  color: var(--color-base);
+  font-family: var(--font-sans-serif);
+  font-wight: var(--font-normal);
+  font-size: 1.5rem;
+  font-style: normal;
+  letter-spacing: 0;
+  line-height: 1.6em;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
 }
 
 header {
   border-bottom: 1px solid #222;
   margin-bottom: 1rem;
+  max-width: 720px;
 }
 
 footer {
   border-top: 1px solid #222;
   margin-top: 1rem;
+  max-width: 720px;
 }
 
 a {
-  color: #00e;
+  color: var(--color-primary);
   text-decoration: none;
 }
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --color-primary: #e6e2d6;
+        --color-accent: #e7a15a;
+        --color-base: #e6e2d6;
+        --color-light: #aaa;
+        --color-border: #333;
+        --color-bg: #0f1214;
+        --color-code: #e6e2d6;
+        --color-code-bg: #040505;
+        --color-code-border: #1a1f23;
+        --font-sans-serif: "Fira Code", monospace;
+        --font-serif: serif;
+        --font-mono: "Fira Code", monospace;
+        --font-light: 200;
+        --font-normal: 400;
+        --font-bold: 600;
+        --font-heavy: 700;
+        --xlarge: 1680px;
+        --large: 1280px;
+        --medium: 980px;
+        --small: 740px;
+        --xsmall: 480px;
+        --height: 4rem;
+        --margin: 2rem;
+        --radius: 0.5rem;
+}
+
+@font-face {
+    font-family: "Fira Code";
+    font-tyle: normal;
+    src: url('/fonts/Fira-Code-Regular.woff2') format('woff2');
+}
+

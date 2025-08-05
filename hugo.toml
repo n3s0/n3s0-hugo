@@ -9,9 +9,9 @@ title = 'My New Hugo Site'
     url = '/journal'
     weight = 1
   [[menus.main]]
-    name = 'Entries'
-    title = 'Entries'
-    url = '/entries'
+    name = 'Build'
+    title = 'Build'
+    url = '/build'
     weight = 2
   [[menus.main]]
     name = 'Notes'
@@ -27,27 +27,29 @@ title = 'My New Hugo Site'
     name = 'Bookmarks'
     title = 'Bookmarks'
     url = '/bookmarks'
-    weight = 14
+    weight = 10
   [[menus.main]]
     name = 'Contact'
     title = 'Contact'
     url = '/contact'
-    weight = 15
+    weight = 11
   [[menus.main]]
     name = 'Github'
     url = 'https://github.com/n3s0/'
-    weight = 15
+    weight = 12
   [[menus.main]]
     name = 'GitLab'
     url = 'https://gitlab.com/n3s0/'
-    weight = 15
+    weight = 13
+  [[menus.main]]
+    name = 'Search'
+    url = '/search'
+    weight = 14
   [[menus.main]]
     name = 'RSS'
     title = 'RSS'
     url = '/index.xml'
-    weight = 17
-
-copyright = "Timothy Loftus (n3s0)"
+    weight = 15
 
 enableSearch = true
 
