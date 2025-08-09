@@ -26,6 +26,52 @@
   text-align: left;
 }
 
+.post-feed {
+  display: block;
+}
+
+.post-entries {
+  list-style: none;
+  padding-left: 0;
+}
+
+.post-entry {
+  font-size: 2rem;
+  margin-bottom: 4vw;
+  padding-left: 0;
+}
+
+.post-entry-excerpt {
+  color: var(--color-light);
+  font-size: 1.6rem;
+}
+
+.post-entry-date {
+  display: block;
+  float: right;
+  font-family: var(--font-mono);
+  font-size: 1.4rem;
+  font-weight: var(--font-normal);
+}
+
+.post-pagination {
+  display: block;
+  margin: 6vw 0 0;
+}
+
+.pagination {
+  font-size: 1.6rem;
+}
+
+.site-foot {
+  font-family: var(--font-mono);
+  font-size: 1.4rem;
+  font-wight: var(--font-normal);
+  margin: 3vw 0 1vw;
+  max-width: 720px;
+  text-align: left;
+}
+
 body {
   background: var(--color-bg);
   color: var(--color-base);
@@ -87,6 +133,6 @@ a {
 @font-face {
     font-family: "Fira Code";
     font-tyle: normal;
-    src: url('/fonts/Fira-Code-Regular.woff2') format('woff2');
+    src: url('/fonts/FiraCode-Regular.woff2') format('woff2');
 }
 
