@@ -4,6 +4,11 @@ title = 'My New Hugo Site'
 
 [menus]
   [[menus.main]]
+    name = "Home"
+    title = "n3s0 || journal"
+    url = "/"
+    weight = 0
+  [[menus.main]]
     name = 'Journal'
     title = 'Journal'
     url = '/journal'
