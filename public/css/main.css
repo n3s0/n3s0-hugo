@@ -1,3 +1,9 @@
+html {
+  font-size: 8px;
+  box-sizing: border-box;
+  -webkit-text-size-adjust: 100%;
+}
+
 .site-wrapper {
   min-height: 100vh;
   padding: 3vw;
@@ -60,10 +66,14 @@
 }
 
 .pagination {
-  font-size: 1.6rem;
+  font-size: ;
+  font-weight: var(--font-normal);
 }
 
-.site-foot {
+.new-posts {
+}
+
+.site-footer {
   font-family: var(--font-mono);
   font-size: 1.4rem;
   font-wight: var(--font-normal);

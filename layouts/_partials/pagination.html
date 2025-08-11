@@ -1,0 +1,12 @@
+{{ $pag := $.Paginator }}
+<div class="post-pagination">
+  <nav class="pagination">
+    {{ if $pag.HasPrev }}
+      <a class="newer-posts" href="{{ $pag.Prev.URL }}"><- Newer</a>
+    {{ end }}
+    <span class="page-number">{{ $pag.PageNumber }} of {{ $pag.TotalPages }}</span>
+    {{ if $pag.HasNext }}
+      <a class="older-posts" href="{{ $pag.Next.URL }}">Older -></a>
+    {{ end }}
+  </nav>
+</div>
