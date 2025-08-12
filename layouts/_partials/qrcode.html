@@ -1,0 +1,13 @@
+<dev id="qrcode">
+  <div>Share this page:</div>
+{{ $text := .RelPermalink }}
+{{ with images.QR $text }}
+  <img 
+    src="{{ .RelPermalink }}"
+    width="{{ .Width }}"
+    height="{{ .Height }}"
+    alt="QR code linking to {{ .RelPermalink }}" 
+    loading="lazy" 
+    class="qrcode-dark">
+{{ end }}
+</dev>
