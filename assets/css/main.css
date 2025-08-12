@@ -17,11 +17,49 @@ html {
 .site-head-container {
   align-items: center;
   border-botom: 2px solid var(--color-border);
-  display: black;
+  display: block;
 }
 
 .site-main {
   max-width: 720px;
+}
+
+nav {
+  border: 0;
+  font: inherit;
+  padding: 0;
+  verticle-align: baseline;
+}
+
+#navigation {
+  margin: 0 0 42px;
+}
+
+.navigation {
+  list-style: none;
+  display: block;
+  font-size: 1.9rem;
+  line-hight: 25px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  whitespace: nowrap;
+}
+
+a, a:hover {
+  color: var(--primary-color);
+  background-color: transparent;
+  line-height: 1.6em;
+  text-decoration: underline;
+  -webkit-text-decoration-skip-ink: all;
+  text-decoration-skip-ink: all;
+  text-decoration-style: solid;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
+}
+
+a:hover {
+  color: var(--bg-color);
+  background-color: var(--primary-color);
 }
 
 .post-content-title {
@@ -82,6 +120,16 @@ html {
   text-align: left;
 }
 
+.footer-columns {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  width: 100%;
+}
+
+.footer-links {
+  margin-right: 24px;
+}
+
 body {
   background: var(--color-bg);
   color: var(--color-base);
@@ -105,11 +153,6 @@ footer {
   border-top: 1px solid #222;
   margin-top: 1rem;
   max-width: 720px;
-}
-
-a {
-  color: var(--color-primary);
-  text-decoration: none;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -138,6 +181,7 @@ a {
         --height: 4rem;
         --margin: 2rem;
         --radius: 0.5rem;
+  }
 }
 
 @font-face {
@@ -145,4 +189,3 @@ a {
     font-tyle: normal;
     src: url('/fonts/FiraCode-Regular.woff2') format('woff2');
 }
-

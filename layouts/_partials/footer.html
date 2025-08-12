@@ -1,3 +1,12 @@
-<div>
-  <a href="{{ .Site.Params.baseURL }}">&#169; 2018 - {{ now.Year }} {{ .Site.Title }}</a>
+<div class="footer-columns">
+  <div class="footer-links">
+    <a href="{{ .Site.BaseURL }}">&#169; 2018 - {{ now.Year }} {{ .Site.Title }}</a>
+    <br>
+    <br>
+    {{ range .Site.Menus.footer }}
+      <a href="{{ .URL }}">{{ .Name }}</a>
+      <br>
+    {{ end }}
+  </div>
+  {{ partial "qrcode" . }}  
 </div>
