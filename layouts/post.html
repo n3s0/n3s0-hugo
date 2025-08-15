@@ -9,3 +9,22 @@
     </div>
   </article>
 {{ end }}
+{{ define "main" }}
+  <header class="page-head">
+    <h1 class="page-head-title">{{ .Title }}</h1>
+    {{ .Content }}
+  </header>
+  <div class="post-feed">
+    <div class="post-entries">
+      <ul class="post-entries">
+        {{ range .Paginator.Pages }}
+          <li class="post-entry">
+            <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
+            <div class="post-entry-excerpt">{{ .Summary }}</div>
+          </li>
+        {{ end }}
+      </ul>
+    </div>
+  </div>
+  {{ partial "pagination.html" . }}
+{{ end }}
