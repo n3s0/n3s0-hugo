@@ -9,7 +9,7 @@
         {{ range .Paginator.Pages }}
           <li class="post-entry">
             <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
-            <div class="post-entry-excerpt">{{ .Summary }}</div>
+            <div class="post-entry-excerpt">{{ .Description }}</div>
           </li>
         {{ end }}
       </ul>
