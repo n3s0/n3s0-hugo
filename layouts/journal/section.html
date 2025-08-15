@@ -1,0 +1,19 @@
+{{ define "main" }}
+<article class="post-content">
+  <header class="page-head">
+    <h1 class="page-head-title">{{ .Title }}</h1>
+    {{ .Content }}
+  </header>
+  <div class="post-feed">
+    <ul class="post-entries">
+      {{ range .Paginator.Pages }}
+        <li class="post-entry">
+          <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
+          <div class="post-entry-excerpt">{{ .Description }}</div>
+        </li>
+      {{ end }}
+    </ul>
+  </div>
+  {{ partial "pagination.html" . }}
+</article>
+{{ end }}

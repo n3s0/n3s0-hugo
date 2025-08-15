@@ -1,5 +1,5 @@
 ---
-title: 'Note Post 3'
+title: 'Build Post 3'
 description: "Occaecat aliqua consequat laborum ut ex aute aliqua culpa quis irure esse magna dolore quis."
 date: 2023-03-15T11:00:00-07:00
 draft: false
